@@ -375,6 +375,7 @@ function renderAll() {
         const cur = getState(k);
         if (cur === 'none') setState(k,'ok');
         else if (cur === 'ok') setState(k,'none');
+        else if (cur === 'issue') setState(k,'none');
       });
       wrap.appendChild(el);
     });
